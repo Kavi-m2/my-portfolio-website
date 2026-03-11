@@ -1,0 +1,56 @@
+KAVINESH M
+Robotics / Embedded Systems Enthusiast
+
+Email: kavineshm7@gmail.com
+LinkedIn: http://www.linkedin.com/in/kavinesh-robotics
+GitHub: https://github.com/Kavi-m2
+
+PROFILE SUMMARY
+Final-year Electronics and Communication Engineering student at P.T. Lee Chengalvaraya Naicker College of Engineering and Technology, affiliated with Anna University. Passionate about robotics, IoT systems, embedded development, electronics, PLC, and VLSI technologies. Interested in solving hardware and embedded software problems, debugging microcontrollers, and building intelligent machines. Uses AI tools to accelerate engineering development and technical problem solving.
+
+EDUCATION
+Bachelor of Engineering - Electronics and Communication Engineering
+P.T. Lee Chengalvaraya Naicker College of Engineering and Technology
+Affiliated to Anna University
+2022 - 2026
+Status: Final Year Student
+
+EXPERIENCE
+Robotics Intern
+Finstein Advisory LLP
+January 2026 - June 2026
+- Designing and building robotics prototypes
+- Working with sensors, servo motors, and microcontrollers
+- Learning digital electronics fundamentals
+- Developing embedded control systems
+- Solving hardware and firmware debugging problems
+
+SKILLS
+Programming: Python, C++, Arduino Programming
+Embedded and Hardware: ESP32, Arduino Boards, Raspberry Pi, Sensors Integration, Motor Drivers, Servo Motor Control, Microcontroller Debugging
+Tools and Platforms: Git, Linux, Arduino IDE, Tinkercad Advanced, Bambu Studio, Lovable AI, ChatGPT, Gemini AI, Copilot, Qwen AI, Gamma AI
+
+PROJECTS
+1. IoT Based Robotic Arm (2023 - 2024)
+Simulated an IoT-controlled robotic arm using ESP32 and servo motors on Wokwi with Blynk-based remote control.
+
+2. AI Powered Precision Irrigation System (2024 - 2025)
+Built with ESP32, Python, OpenWeatherMap API, Firebase, and Telegram alerts.
+
+3. IoT Smart Lock System (2024 - 2025)
+ESP32-based system with RFID authentication, keypad entry, Blynk remote unlock, buzzer alerts, and automatic relocking.
+
+4. Joystick Controlled Robotic Arm (2025 - 2026)
+3D printed robotic arm using Arduino UNO and MG995 servos for pick-and-place operations.
+
+5. Vertical Plotter Drawing Robot (2025 - 2026)
+Built with Arduino Uno, L293D motor shield, NEMA 17 motors, servo pen lift, and custom 3D printed mounts.
+
+6. Spider Robot - Quadruped XBOT (2025 - 2026)
+3D printed quadruped robot using Arduino Nano, PCA9685 PWM driver, and eight MG90S servo motors with crawl and trot gaits.
+
+ACHIEVEMENTS AND CERTIFICATIONS
+- VLSI Course Certification - Internshala (2024)
+- First Prize - VIDYUT YANTRA 2K25 Symposium, Alpha College of Engineering
+- Technical Paper Presentation - XELFUGETS 2K24 Symposium, Jaya Engineering College
+- Robotics Internship Completion Certificate, Finstein Advisory LLP
