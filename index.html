@@ -39,7 +39,7 @@
         <div class="container hero-grid">
             <div class="hero-copy" data-reveal>
                 <p class="eyebrow">Robotics / Embedded Systems Enthusiast</p>
-                <h1 class="hero-title">KAVINESH M</h1>
+                <h1 class="hero-title"><span class="hero-name">KAVINESH</span></h1>
                 <p class="hero-subtitle">Building intelligent machines with robotics, embedded systems, and IoT.</p>
                 <p class="hero-description">
                     Final-year Electronics and Communication Engineering student focused on robotics prototypes,
@@ -57,33 +57,8 @@
                 </div>
             </div>
             <div class="hero-visual" data-reveal>
-                <div class="hud-orbit orbit-one"></div>
-                <div class="hud-orbit orbit-two"></div>
-                <div class="hud-grid"></div>
                 <div class="hero-photo-frame">
-                    <div class="photo-glow"></div>
-                    <div class="scan-line"></div>
-                    <div class="frame-corner corner-top-left"></div>
-                    <div class="frame-corner corner-top-right"></div>
-                    <div class="frame-corner corner-bottom-left"></div>
-                    <div class="frame-corner corner-bottom-right"></div>
                     <img src="assets/imgs/kavinesh-profile.jpeg" alt="Portrait of Kavinesh M" class="hero-photo">
-                </div>
-                <div class="floating-panel panel-top">
-                    <span class="panel-label">Current Focus</span>
-                    <strong>Quadrupeds, robotic arms, plotters</strong>
-                </div>
-                <div class="floating-panel panel-bottom">
-                    <span class="panel-label">AI-Assisted Workflow</span>
-                    <strong>ChatGPT, Copilot, Gemini, Qwen</strong>
-                </div>
-                <div class="hero-badge badge-left">
-                    <span class="badge-label">Control Stack</span>
-                    <strong>ESP32 | Arduino | Raspberry Pi</strong>
-                </div>
-                <div class="hero-badge badge-right">
-                    <span class="badge-label">Lab Status</span>
-                    <strong>BUILDING / TESTING / ITERATING</strong>
                 </div>
             </div>
         </div>
@@ -290,7 +265,13 @@
                     </div>
                     <a href="assets/Kavinesh-M-Resume.pdf" class="btn btn-primary btn-neon mt-4" download>Download Resume</a>
                 </div>
-                <form action="mailto:kavineshm7@gmail.com" method="post" enctype="text/plain" class="contact-form contact-panel" data-reveal>
+                <form
+                    id="contact-form"
+                    class="contact-form contact-panel"
+                    data-reveal
+                    data-emailjs-service-id="service_xil1u7g"
+                    data-emailjs-template-id="template_2t28e0s"
+                    data-emailjs-public-key="9xMntdbJepTYKTRDU">
                     <div class="form-row">
                         <div class="form-group col-sm-6">
                             <input type="text" class="form-control" name="name" placeholder="Your Name" required>
@@ -306,6 +287,9 @@
                         </div>
                         <div class="form-group col-sm-12 mt-2">
                             <button type="submit" class="btn btn-outline-primary btn-ghost">Send Message</button>
+                        </div>
+                        <div class="form-group col-sm-12 mb-0">
+                            <p class="form-status" id="form-status" aria-live="polite"></p>
                         </div>
                     </div>
                 </form>
@@ -339,6 +323,7 @@
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/meyawo.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>

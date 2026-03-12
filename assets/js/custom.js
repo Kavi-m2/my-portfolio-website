@@ -137,4 +137,52 @@
             heroFrame.style.setProperty('--hero-rotate-x', '4deg');
         });
     }
+
+    var contactForm = document.getElementById('contact-form');
+    var formStatus = document.getElementById('form-status');
+    if (contactForm && formStatus) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var serviceId = contactForm.getAttribute('data-emailjs-service-id');
+            var templateId = contactForm.getAttribute('data-emailjs-template-id');
+            var publicKey = contactForm.getAttribute('data-emailjs-public-key');
+            var submitButton = contactForm.querySelector('button[type="submit"]');
+            var emailJsReady = window.emailjs && serviceId && templateId && publicKey &&
+                serviceId !== 'YOUR_EMAILJS_SERVICE_ID' &&
+                templateId !== 'YOUR_EMAILJS_TEMPLATE_ID' &&
+                publicKey !== 'YOUR_EMAILJS_PUBLIC_KEY';
+
+            formStatus.className = 'form-status';
+
+            if (!emailJsReady) {
+                formStatus.classList.add('is-error');
+                formStatus.textContent = 'EmailJS is not configured yet. Add your public key, service ID, and template ID.';
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            formStatus.textContent = 'Sending your message...';
+
+            window.emailjs.init({
+                publicKey: publicKey
+            });
+
+            window.emailjs.sendForm(serviceId, templateId, contactForm)
+                .then(function () {
+                    contactForm.reset();
+                    formStatus.className = 'form-status is-success';
+                    formStatus.textContent = 'Message sent successfully.';
+                })
+                .catch(function () {
+                    formStatus.className = 'form-status is-error';
+                    formStatus.textContent = 'Message failed to send. Please try again or email me directly.';
+                })
+                .finally(function () {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send Message';
+                });
+        });
+    }
 })();
