@@ -32,9 +32,13 @@ Keep the website:
 - Keep neon blue, cyan, purple, and subtle orange highlights.
 - Do not switch to a plain white or generic business theme.
 - Keep animations smooth and lightweight.
+- Keep hero micro-animations especially smooth and readable rather than flashy.
 - Buttons should stay compact but clearly visible.
 - Hero content must remain readable over the background.
 - Profile image should stay properly cropped and slightly lowered in the hero frame.
+- Keep the hero profile image clearly visible with no text panels, badges, or HUD details overlapping the front of the image.
+- Keep the hero name as `KAVINESH` only unless explicitly changed by the user.
+- Keep the top navbar strip slightly slimmer than the original template unless explicitly changed by the user.
 - Top-left brand text should remain `MK` unless explicitly changed by the user.
 
 ## Content Rules
@@ -92,5 +96,6 @@ Quick push helper:
 
 - Do not convert this into React, Next.js, or another framework unless the user asks.
 - Do not remove the existing robotics HUD hero design without a request.
+- Do not reintroduce floating panels, badges, scan lines, or other front overlays on the hero image unless the user asks.
 - Do not add unrelated sections like pricing, testimonials, or blog unless explicitly requested.
 - Do not use generic lorem ipsum or placeholder personal text.
